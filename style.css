@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: HSL(262, 36%, 95%);
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+* {
+    transition: 500ms;
+}
+            /* Phone Designing */
+.phone {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 505px;
+    background-color: white;
+    border-radius: 35px;
+    box-shadow:
+    0px 1px 2px 4px rgba(0, 0, 0, 0.03),
+    1px 2px 4px 8px rgba(0, 0, 0, 0.03),
+    2px 4px 8px 16px rgba(0, 0, 0, 0.03),
+    4px 8px 16px 32px rgba(0, 0, 0, 0.03);
+}
+.background-shape {
+    position: absolute;
+    width: 450px;
+    height: 550px;
+    background: linear-gradient(to top,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%));
+    top: 0;
+    left: -200px;
+    border-radius: 0px 0px 250px 250px;
+}
+.content {
+    width: 225px;
+    height: 480px;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 25px;
+}
+/* Notch */
+.notch {
+    width: 130px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 58px;
+    border-radius: 20px;
+}
+
+            /* Profile */
+.profile {
+    width: 225px;
+    height: 65px;
+    background: linear-gradient(to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%));
+    border-radius: 25px 25px 5px 5px;
+}
+.profile-items {
+    top: 42px;
+    position: absolute;
+    display: flex;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.profile-items .back-button img{
+    margin-top: 5px;
+}
+.profile-items .avatar img {
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 5px;
+    transition: 500ms;
+}
+.profile-items .avatar img:hover {
+    scale: 1.5;
+}
+.profile-items .name h3 {
+    font-size: 12px;
+    color: white;
+    margin: 0;
+    font-family: Rubik;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.profile-items .status p {
+    font-size: 8px;
+    color: hsl(276, 100%, 81%);
+    margin: 0;
+    font-family: Rubik;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.profile-items .options img {
+    margin-top: 5px;
+    margin-left: 62.5px;
+}
+
+            /* Chat */
+.chat {
+    width: 225px;
+    height: 400px;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 0px 0px 25px 25px;
+}
+.messages {
+    position: relative;
+    margin: 10px;
+}
+.messages p{
+    margin: 0;
+}
+/* Messages */
+.msg {
+    max-width: 125px;
+    font-size: 9px;
+    font-family: Rubik;
+    font-weight: 400;
+    padding: 5px;
+}
+.msg-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.msg-2 {
+    margin-bottom: 15px;
+}
+.msg-3 {
+    display: flex;
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+    .msg-3 img{
+        border-radius: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+        transition: 500ms;
+    }
+    .msg-3 .img-2 img{
+        margin: 0;
+    }
+    .msg-3 img:hover{
+        scale: 1.3;
+    }
+.msg-4 {
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+.msg-5 {
+    margin-bottom: 15px;
+    margin-left: 115px;
+    width: 80px;
+}
+.msg-6 {
+    margin-bottom: 10px;
+}
+.msg-left {
+    background-color: hsl(276, 38%, 92%);
+    color: hsl(276, 55%, 52%);
+    border-radius: 10px 10px 10px 2.5px;
+}
+.msg-right {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+    border-radius: 10px 10px 2.5px 10px;
+}
+/* Radio Buttons */
+.radio-box {
+    width: 160px;
+    height: 30px;
+    background: linear-gradient(to left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%));
+    font-size: 9px;
+    color: hsl(275, 50%, 91%);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: flex;
+    font-family: Rubik;
+    font-weight: 400;
+    border-radius: 10px 10px 10px 2.5px;
+}
+.radio-box input {
+    margin-bottom: 3px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.radio-box input[type="radio"] {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+    outline: none;
+    margin-top: 7px;
+}
+.radio-box input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+.radio-box input[type="radio"]:checked:before {
+    background: hsl(289, 100%, 85%);
+    transition: 500ms;
+}
+.radio-box input[type="radio"]:checked {
+    border-color:hsl(289, 100%, 72%);
+}
+.radio-box .details {
+    margin-top: 8px;
+    display: flex;
+}
+.radio-box label {
+    margin-right:32px;
+}
+.radio-box .price {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 11px;
+}
+.radio-box .span-2 {
+    margin-left: 18px;
+}
+/* Message Box */
+.message-box {
+    width: 210px;
+    height: 35px;
+    display: flex;
+    background-color: #fefefe;
+    margin: auto;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 17.5px;
+}
+.message-box p{
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 7px;
+    position: relative;
+    left: 20px;
+    top: 6px;
+    color: hsla(268, 7%, 64%, 0.452);
+}
+.message-box img {
+    border-radius: 50%;
+    position: relative;
+    left: 122.5px;
+    top: 5px;
+}
+
+            /* Description */
+.description {
+    position: relative;
+    text-align: center;
+    margin-top: 65px;
+    margin-right: 35px;
+    margin-left: 35px;
+    max-width:300px;
+}
+
+.description h1{
+    font-family: Rubik;
+    font-size: 39px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: hsl(271, 36%, 24%);
+}
+.description p{
+    font-family: Rubik;
+    line-height: 1.75rem;
+    color: hsl(270, 7%, 64%);
+}
+
+@media screen and (min-width : 1000px) {
+    .container {
+        display: flex;
+    }
+    .description {
+        max-width: 440px;
+        text-align: left;
+        margin-left: 125px;
+        margin-top: 130px;
+    }
+    .background-shape {
+        position: absolute;
+        width: 500px;
+        height: 700px;
+        background: linear-gradient(to top,
+        hsl(264, 100%, 61%),
+        hsl(293, 100%, 63%));
+        top: 0;
+        left: -175px;
+        border-radius: 0px 0px 250px 250px;
+    }
+}
